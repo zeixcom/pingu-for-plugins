@@ -1,4 +1,3 @@
-config/
+gulp/
 gulpfile.js
-postcss.config.js
 dist/
