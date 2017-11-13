@@ -2,8 +2,12 @@ var gulp = require('gulp');
 
 gulp.task('babel', function() {
   var babel = require('gulp-babel');
+  var eslint = require('gulp-eslint');
 
   gulp.src('./src/js/*{.es6, js}')
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError())
     .pipe(babel({
       presets: ['env']
     }))

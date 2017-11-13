@@ -8,6 +8,6 @@ requireDir('./gulp');
 gulp.task('default', function() {
   runSequence(
     'clean',
-    ['babel', 'es6copy']
+    ['babel', 'scss']
   );
 });
