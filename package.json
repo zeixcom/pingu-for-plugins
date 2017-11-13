@@ -36,9 +36,11 @@
     "eslint-plugin-react": "^7.4.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.9.0",
     "gulp-sass": "^3.1.0",
     "gulp-stylelint": "^5.0.0",
     "gulp-tap": "^1.0.1",
+    "gulp-uglify": "^3.0.0",
     "node-sass": "^4.6.0",
     "run-sequence": "^2.2.0",
     "stylelint": "^8.2.0"

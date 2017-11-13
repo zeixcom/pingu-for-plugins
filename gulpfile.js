@@ -11,3 +11,11 @@ gulp.task('default', function() {
     ['babel', 'scss']
   );
 });
+
+gulp.task('build', function() {
+  runSequence(
+    'clean',
+    ['babel', 'scss'],
+    ['uglify', 'minify-css']
+  )
+});
