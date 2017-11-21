@@ -5,12 +5,13 @@ var StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   entry: {
-    '../dist/index.js': './src/index.js',
+    '../dist/index.js': './src/js/index.js',
     '../dist/main.css': './src/css/main.scss'
   },
   output: {
     filename: '[name]',
-    path: path.resolve(__dirname, '../dist')
+    path: path.resolve(__dirname, '../dist'),
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
